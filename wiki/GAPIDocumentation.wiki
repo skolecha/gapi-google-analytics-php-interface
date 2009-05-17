@@ -1,0 +1,30 @@
+#GAPI Documentation Page
+
+= Class Documentation =
+
+This page describes the methods available when using the GAPI class.
+
+
+== Methods ==
+
+=== Google Analytics Report Request ===
+
+{{{
+requestReportData($report_id, $dimensions, $metrics, $sort_metric=null, $start_date=null, $end_date=null, $start_index=1, $max_results=30)
+}}}
+
+String $report_id - ID of table to perform reporting from
+
+Array $dimensions Google Analytics dimensions e.g. array('browser')
+
+Array $metrics Google Analytics metrics e.g. array('pageviews')
+
+Array $sort_metric OPTIONAL: Dimension or dimensions to sort by
+
+String $start_date OPTIONAL: Start of reporting period
+
+String $end_date OPTIONAL: End of reporting period
+
+Int $start_index OPTIONAL: Start index of results
+
+Int $max_results OPTIONAL: Max results returned
