@@ -1,3 +1,4 @@
+#labels Featured
 = Using the GAPI filter control =
 
 The GAPI filter control is designed to making filtering with the Google Analytics API easier - through the use of normal PHP operators for AND and OR, and the translation of metrics and parameters to the correct Google Analytics namespaced versions.
