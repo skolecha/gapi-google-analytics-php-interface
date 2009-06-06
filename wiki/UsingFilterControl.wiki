@@ -42,3 +42,28 @@ As seen on the [http://code.google.com/apis/analytics/docs/gdata/gdataReference.
 || !~ || Does not match regular expression ||
 || =@ || Contains substring ||
 || !@ || Does not contain substring ||
+
+== Examples ==
+
+== Simple examples ===
+
+Select results where country dimesion matches 'United States', browser dimension matches 'Firefox' and browserVersion dimension does not match '3.0.10'.
+
+{{{
+$filter = 'country == United States && browser == Firefox && browserVersion != 3.0.10';
+}}}
+
+Select results where country dimension matches 'United States' and visits metric is greater than 30.
+
+{{{
+$filter = 'country == United States && visits > 30';
+}}}
+
+=== Regular expression examples ===
+
+
+Select results where country dimesion matches 'United States', browser dimension matches 'Firefox' and browserVersion matches regular expression '^3\.' (starts with '3.').
+
+{{{
+$filter = 'country == United States && browser = Firefox && browserVersion =~ ^3\.';
+}}}
