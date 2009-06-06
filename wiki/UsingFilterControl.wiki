@@ -1,1 +1,37 @@
 = Using the GAPI filter control =
+
+The GAPI filter control is designed to making filtering with the Google Analytics API easier - through the use of normal PHP operators for AND and OR, and the translation of metrics and parameters to the correct Google Analytics namespaced versions.
+
+The Google Analytics API has a small amount of documentation on using the Google Analytics API filter control at the [http://code.google.com/apis/analytics/docs/gdata/gdataReference.html#filtering Google Analytics API reference].
+
+The most frustrating aspect of the Google Analytics API filter control is that Google hasn't yet offered any operators to specify precedence. Where we would normally use ( and ) in PHP, we can't do anything in our filters here. To allow the sensible use of OR in the filter control, they have given the OR operator a higher precedence than AND.
+
+For example, where we would normally write:
+
+country == 'United States' && ( browser == 'Firefox || browser == 'Chrome')
+
+This would be represented in a GAPI filter string by:
+
+country == 'United States' && browser == 'Firefox || browser == 'Chrome'
+
+== Valid Operators for filtering ==
+
+As seen on the [http://code.google.com/apis/analytics/docs/gdata/gdataReference.html#filtering Google Analytics API reference], there are six operators for metrics and six operators for dimensions. The GAPI interface allows you to use all six operators.
+
+=== Metric Filters ===
+|| Operator || Description ||
+|| == || Equals ||
+|| != || Not equal ||
+|| > || Greater than ||
+|| < || Less than ||
+|| >= || Greater than or equal to ||
+|| <= || Less than or equal to ||
+
+=== Dimension Filters ===
+|| Operator || Description ||
+|| == || Exact match ||
+|| != || Does not match ||
+|| =~ || Matches a regular expression ||
+|| !~ || Does not match regular expression ||
+|| =@ || Contains substring ||
+|| !@ || Does not contain substring ||
