@@ -14,9 +14,11 @@ This would be represented in a GAPI filter string by:
 
 country == 'United States' && browser == 'Firefox || browser == 'Chrome'
 
+As with the metric and dimensions selection for GAPI requests, you should not include the 'ga:' namespace that some Google Analytics APIs require.
+
 == Valid Operators for filtering ==
 
-As seen on the [http://code.google.com/apis/analytics/docs/gdata/gdataReference.html#filtering Google Analytics API reference], there are six operators for metrics and six operators for dimensions. The GAPI interface allows you to use all six operators.
+As seen on the [http://code.google.com/apis/analytics/docs/gdata/gdataReference.html#filtering Google Analytics API reference], there are six operators for metrics and six operators for dimensions. The GAPI interface allows you to use all six operators. GAPI also gives you '&&' and '||' operators for AND and OR.
 
 === GAPI Operators ===
 || Operator || Description ||
