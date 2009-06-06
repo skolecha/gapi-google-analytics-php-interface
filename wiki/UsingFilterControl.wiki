@@ -21,7 +21,7 @@ As seen on the [http://code.google.com/apis/analytics/docs/gdata/gdataReference.
 === GAPI Operators ===
 || Operator || Description ||
 || && || And ||
-|| `||` || Or ||
+|| `|``|` || Or ||
 
 === Metric Filters ===
 || Operator || Description ||
