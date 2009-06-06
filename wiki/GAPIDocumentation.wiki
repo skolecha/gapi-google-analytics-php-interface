@@ -1,6 +1,4 @@
 #labels Featured,Phase-Implementation
-#Class Documentaion
-
 = Class Documentation =
 
 This page describes the methods available when using the GAPI class.
