@@ -18,6 +18,11 @@ country == 'United States' && browser == 'Firefox || browser == 'Chrome'
 
 As seen on the [http://code.google.com/apis/analytics/docs/gdata/gdataReference.html#filtering Google Analytics API reference], there are six operators for metrics and six operators for dimensions. The GAPI interface allows you to use all six operators.
 
+=== GAPI Operators ===
+|| Operator || Description ||
+|| && || And ||
+|| `||` || Or ||
+
 === Metric Filters ===
 || Operator || Description ||
 || == || Equals ||
