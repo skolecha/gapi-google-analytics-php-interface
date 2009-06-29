@@ -12,23 +12,16 @@ This page describes the methods available when using the GAPI class.
 requestReportData($report_id, $dimensions, $metrics, $sort_metric=null, $filter=null, $start_date=null, $end_date=null, $start_index=1, $max_results=30)
 }}}
 
-String $report_id
-
-Array $dimensions Google Analytics dimensions e.g. array('browser')
-
-Array $metrics Google Analytics metrics e.g. array('pageviews')
-
-Array $sort_metric OPTIONAL: Dimension or dimensions to sort by e.g.('-visits')
-
-String $filter OPTIONAL: Filter logic for filtering results
-
-String $start_date OPTIONAL: Start of reporting period
-
-String $end_date OPTIONAL: End of reporting period
-
-Int $start_index OPTIONAL: Start index of results
-
-Int $max_results OPTIONAL: Max results returned
+|| Attribute || Type (required/optional) || Description || Example ||
+|| $report_id || String || ID of the report you wish to query || ||
+|| $dimensions || Array || Google Analytics dimensions || array('browser') ||
+|| $metrics || Array || Google Analytics metrics || array('pageviews') ||
+|| $sort_metric ||  Array (optional) || Dimension or dimensions to sort by || array('-visits') ||
+|| $filter || String (optional) || Filter logic for filtering results || see [http://code.google.com/p/gapi-google-analytics-php-interface/wiki/UsingFilterControl using filter control] ||
+|| $start_date || String (optional) || Start of reporting period YYYY-MM-DD || '2009-06-30' ||
+|| $end_date || String (optional) || End of reporting period YYYY-MM-DD || '2009-06-30' ||
+|| $start_index || Int (optional) || Start index of results || 1 ||
+|| $max_results || Int (optional) || Max results returned. Max 1000 records || 30 ||
 
 
 === Google Analytics Account Request ===
