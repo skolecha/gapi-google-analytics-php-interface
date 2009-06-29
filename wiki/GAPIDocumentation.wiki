@@ -19,7 +19,7 @@ requestReportData($report_id, $dimensions, $metrics, $sort_metric=null, $filter=
 || $sort_metric ||  Array (optional) || Dimension or dimensions to sort by. Must match metric or dimension, precede option with '-' for descending order.  || array('-visits') ||
 || $filter || String (optional) || Filter logic for filtering results || see [http://code.google.com/p/gapi-google-analytics-php-interface/wiki/UsingFilterControl using filter control] ||
 || $start_date || String (optional) || Start of reporting period YYYY-MM-DD || '2009-06-30' ||
-|| $end_date || String (optional) || End of reporting period YYYY-MM-DD || '2009-06-30' ||
+|| $end_date || String (optional) || End of reporting period YYYY-MM-DD || '2009-04-30' ||
 || $start_index || Int (optional) || Start index of results || 1 ||
 || $max_results || Int (optional) || Max results returned. Max 1000 records || 30 ||
 
