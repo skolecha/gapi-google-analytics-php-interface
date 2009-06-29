@@ -16,7 +16,7 @@ requestReportData($report_id, $dimensions, $metrics, $sort_metric=null, $filter=
 || $report_id || String || ID of the report you wish to query || ||
 || $dimensions || Array || Google Analytics dimensions || array('browser') ||
 || $metrics || Array || Google Analytics metrics || array('pageviews') ||
-|| $sort_metric ||  Array (optional) || Dimension or dimensions to sort by. Must match metric or dimension, use precede option with '-' for descending order.  || array('-visits') ||
+|| $sort_metric ||  Array (optional) || Dimension or dimensions to sort by. Must match metric or dimension, precede option with '-' for descending order.  || array('-visits') ||
 || $filter || String (optional) || Filter logic for filtering results || see [http://code.google.com/p/gapi-google-analytics-php-interface/wiki/UsingFilterControl using filter control] ||
 || $start_date || String (optional) || Start of reporting period YYYY-MM-DD || '2009-06-30' ||
 || $end_date || String (optional) || End of reporting period YYYY-MM-DD || '2009-06-30' ||
