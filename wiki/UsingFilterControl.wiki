@@ -9,11 +9,11 @@ The most frustrating aspect of the Google Analytics API filter control is that G
 
 For example, where we would normally write:
 
-country == 'United States' && ( browser == 'Firefox || browser == 'Chrome')
+country == 'United States' && ( browser == 'Firefox' || browser == 'Chrome')
 
 This would be represented in a GAPI filter string by:
 
-country == 'United States' && browser == 'Firefox || browser == 'Chrome'
+country == 'United States' && browser == 'Firefox' || browser == 'Chrome'
 
 As with the metric and dimensions selection for GAPI requests, you should not include the 'ga:' namespace that some Google Analytics APIs require.
 
